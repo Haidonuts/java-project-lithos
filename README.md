@@ -1,4 +1,4 @@
-<h1 align="center">·:*¨༺ 𝐏𝐑𝐎𝐉𝐄𝐂𝐓 ★ 𝐋𝐈𝐓𝐇𝐎𝐒 ༻¨*:·.</h1>
+<h1 align="center">𓇢𓆸𐦍𝐏𝐑𝐎𝐉𝐄𝐂𝐓 ⟡ 𝐋𝐈𝐓𝐇𝐎𝐒 ❦.𓍼ོ</h1>
 <p align="center">
     A console-based rpg where you restore humanity's greatest tools from scratch<br>
     <br>
@@ -20,8 +20,8 @@
     💤Sleep to advance the day<br>
     📜Open Guidebook<br>
     <br>
-    <b>🌐Game Storage</b><br>
+    <b>Game Storage</b><br>
     <br>
     All game state, item inventory, and character data are handled through structured Java objects and persisted via file handling to ensure seamless continuation between play sessions.
 </p>
-    
+<h2 align="left">݁☘︎Project Structure</h1>
