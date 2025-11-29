@@ -1,4 +1,7 @@
-<h1 align="center">𔓘ֶָ֢𓏲.☘︎ 𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐋𝐈𝐓𝐇𝐎𝐒݁˖ֶָ֢𓅫𓏲⋆๋࣭ 𔓘</h1>
+<h1 align="center"> 
+    ꧁⎝ 𓆩༺✧༻𓆪 ⎠꧂
+    𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐋𝐈𝐓𝐇𝐎𝐒
+    ݁</h1>
 <p align="center">
     A console-based rpg where you restore humanity's greatest tools from scratch<br>
     <br>
