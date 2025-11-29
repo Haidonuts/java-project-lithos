@@ -28,7 +28,7 @@
 </p>
 <h2 align="left">݁☘︎Project Structure</h1>
 <p align="left">
-📁src/
+📁src/<br>
     ├── ☕ Main.java<br>
     ├── ☕ Explore.java<br>
     ├── ☕ AlchemyTable.java<br>
