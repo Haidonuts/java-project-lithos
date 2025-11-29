@@ -45,4 +45,17 @@
 ├── ☕ Weather.java
 └── ☕ Create.java
 ```
-- ```Main.java``` - Entry point of the program. Initializes all core systems, manages the main game loop, displays the user menu, and handles primary user interactions (choosing actions).
+- ```Main.java``` - Entry point of the program. Initializes all core systems, manages the main game loop, displays the user menu, and handles primary user interactions (choosing actions).<br>
+- ```Explore.java``` - Handles the Explore command, managing location selection, calculating hazard encounters, and applying resource doubling (Kino's effect).
+- ```AlchemyTable.java``` - Manages the Alchemy command, handling advanced chemical experiments and recipes (e.g., Revival Potion and Platinum bonus yield).
+- ```CraftedItem.java``` - Extends Item and implements Usable. Defines items that can be created by the player and includes the custom useItem logic for unique effects (e.g., Revival Potion logic).
+- ```GameState.java``` - The central state manager. Tracks day count, exploration limits, current Weather, companion revival status, and permanent game effects (like Bem's 100% craft success).
+- ```Guidebook.java``` - Displays helpful, static game information, including crafting recipes, character traits, and material drops by location.
+- ```Inventory.java``` - Manages the player's entire resource pool, including Raw Materials, Crafted Items, permanent Structures (Furnace), and the gold panning/fullness status.
+- ```Item.java``` - An abstract base class for all physical items in the game, providing a common structure for all resource types.
+- ```Place.java``` - An Enum defining all explorable locations, along with their static commonDrops and rareDrops lists and associated base chances.
+- ```PlaceNotFound.java``` - A custom exception class used to handle invalid location inputs during exploration.
+- ```TextUtil.java``` - Utility class for text-based effects, specifically used for typing out the intro story for a dramatic terminal appearance.
+- ```Usable.java``` - An interface defining the contract for any item that can be "used" by the player (e.g., CraftedItem).
+- ```Weather.java``` - An Enum defining various weather conditions, their descriptions, and the multiplier they apply to the DropTable for resource chances.
+- ```Create.java``` - Manages the Craft command, handling material consumption for permanent structures and basic tool construction, incorporating success rate logic.
