@@ -27,7 +27,7 @@
     All game state, item inventory, and character data are handled through structured Java objects and persisted via file handling to ensure seamless continuation between play sessions.
 </p>
 <h2 align="left">݁☘︎Project Structure</h1>
-
+```
 src/
 ├── Main.java
 ├── Explore.java
