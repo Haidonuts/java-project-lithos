@@ -27,11 +27,11 @@
     All game state, item inventory, and character data are handled through structured Java objects and persisted via file handling to ensure seamless continuation between play sessions.
 </p>
 <h2 align="left">݁☘︎Project Structure</h1>
-<p align="left">
+
 ## Project Structure
 
 - 📁 [`src/`](./src)
-      ├── ☕ [`Main.java`](./src/Main.java)
+  - ☕ [`Main.java`](./src/Main.java)
   - ☕ [`Explore.java`](./src/Explore.java)
   - ☕ [`AlchemyTable.java`](./src/AlchemyTable.java)
   - ☕ [`CraftedItem.java`](./src/CraftedItem.java)
