@@ -29,19 +29,19 @@
 <h2 align="left">݁☘︎Project Structure</h1>
 <p align="left">
 📁src/
-    ├── ☕ Main.java          
-    ├── ☕ Explore.java
-    ├── ☕ AlchemyTable.java
-    ├── ☕ CraftedItem.java
-    ├── ☕ GameState.java
-    ├── ☕ Guidebook.java
-    ├── ☕ Inventory.java
-    ├── ☕ Item.java
-    ├── ☕ Place.java
-    ├── ☕ PlaceNotFound.java
-    ├── ☕ TextUtil.java
-    ├── ☕ Usable.java
-    ├── ☕ Weather.java
+    ├── ☕ Main.java<br>
+    ├── ☕ Explore.java<br>
+    ├── ☕ AlchemyTable.java<br>
+    ├── ☕ CraftedItem.java<br>
+    ├── ☕ GameState.java<br>
+    ├── ☕ Guidebook.java<br>
+    ├── ☕ Inventory.java<br>
+    ├── ☕ Item.java<br>
+    ├── ☕ Place.java<br>
+    ├── ☕ PlaceNotFound.java<br>
+    ├── ☕ TextUtil.java<br>
+    ├── ☕ Usable.java<br>
+    ├── ☕ Weather.java<br>
     └── ☕ Create.java
     <br>
     * Main.java - Entry point of the program. Initializes all core systems, manages the main game loop, displays the user menu, and handles primary user interactions (choosing actions).
