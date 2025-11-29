@@ -45,4 +45,4 @@
 ├── ☕ Weather.java
 └── ☕ Create.java
 ```
--```Main.java``` -Entry point of the program. Initializes all core systems, manages the main game loop, displays the user menu, and handles primary user interactions (choosing actions).
+- ```Main.java``` - Entry point of the program. Initializes all core systems, manages the main game loop, displays the user menu, and handles primary user interactions (choosing actions).
