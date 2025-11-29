@@ -13,11 +13,15 @@
     <br>
     <b>Users Can</b><br>
     <br>
-    🗺️Explore<br>
-    🛠️Create<br>
+    🗺️Explore to find loots<br>
+    🛠️Create items<br>
     🧪Experiment using the Alchemy Table<br>
     🧺Open Inventory and Select Items<br>
-    💤Sleep<br>
-    📜Open Guidebook
+    💤Sleep to advance the day<br>
+    📜Open Guidebook<br>
+    <br>
+    <b>🌐Game Storage</b><br>
+    <br>
+    All game state, item inventory, and character data are handled through structured Java objects and persisted via file handling to ensure seamless continuation between play sessions.
 </p>
     
