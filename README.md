@@ -28,20 +28,22 @@
 </p>
 <h2 align="left">݁☘︎Project Structure</h1>
 <p align="left">
-📁src/<br>
-    ├── ☕ Main.java<br>
-    ├── ☕ Explore.java<br>
-    ├── ☕ AlchemyTable.java<br>
-    ├── ☕ CraftedItem.java<br>
-    ├── ☕ GameState.java<br>
-    ├── ☕ Guidebook.java<br>
-    ├── ☕ Inventory.java<br>
-    ├── ☕ Item.java<br>
-    ├── ☕ Place.java<br>
-    ├── ☕ PlaceNotFound.java<br>
-    ├── ☕ TextUtil.java<br>
-    ├── ☕ Usable.java<br>
-    ├── ☕ Weather.java<br>
-    └── ☕ Create.java
-    <br>
-    * Main.java - Entry point of the program. Initializes all core systems, manages the main game loop, displays the user menu, and handles primary user interactions (choosing actions).
+## Project Structure
+
+- 📁 [`src/`](./src)
+  - 📄 [`Main.java`](./src/Main.java) - Entry point of the program...
+  - 📄 [`Explore.java`](./src/Explore.java)
+  - 📄 [`AlchemyTable.java`](./src/AlchemyTable.java)
+  - 📄 [`CraftedItem.java`](./src/CraftedItem.java)
+  - 📄 [`GameState.java`](./src/GameState.java)
+  - 📄 [`Guidebook.java`](./src/Guidebook.java)
+  - 📄 [`Inventory.java`](./src/Inventory.java)
+  - 📄 [`Item.java`](./src/Item.java)
+  - 📄 [`Place.java`](./src/Place.java)
+  - 📄 [`PlaceNotFound.java`](./src/PlaceNotFound.java)
+  - 📄 [`TextUtil.java`](./src/TextUtil.java)
+  - 📄 [`Usable.java`](./src/Usable.java)
+  - 📄 [`Weather.java`](./src/Weather.java)
+  - 📄 [`Create.java`](./src/Create.java)
+
+* [`Main.java`](./src/Main.java) - Entry point of the program. Initializes all core systems, manages the main game loop, displays the user menu, and handles primary user interactions (choosing actions).
