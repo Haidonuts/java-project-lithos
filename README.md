@@ -7,5 +7,5 @@
     Kate Hannah Bem P. De Leon<br>
     Tremonti C. Canatuan
 </p>
-<h2 align="left">─ ⊹ ⊱𝐎𝐕𝐄𝐑𝐕𝐈𝐄𝐖⊰ ⊹ ─</h1>
+<h2 align="left">─ ⊹𝙾𝚅𝙴𝚁𝚅𝙸𝙴𝚆⊹ ─</h1>
 
