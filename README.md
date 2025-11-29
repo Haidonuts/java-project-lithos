@@ -13,11 +13,11 @@
     <br>
     <b>Users Can</b><br>
     <br>
-    Explore<br>
-    Create<br>
-    Experiment using the Alchemy Table<br>
-    Open Inventory and Select Items<br>
-    Sleep<br>
-    Open Guidebook
+    🗺️Explore<br>
+    🛠️Create<br>
+    🧪Experiment using the Alchemy Table<br>
+    🧺Open Inventory and Select Items<br>
+    💤Sleep<br>
+    📜Open Guidebook
 </p>
     
