@@ -29,19 +29,20 @@
 <h2 align="left">݁☘︎Project Structure</h1>
 
 ```plaintext
-src/
-├── Main.java
-├── Explore.java
-├── AlchemyTable.java
-├── CraftedItem.java
-├── GameState.java
-├── Guidebook.java
-├── Inventory.java
-├── Item.java
-├── Place.java
-├── PlaceNotFound.java
-├── TextUtil.java
-├── Usable.java
-├── Weather.java
-└── Create.java
+📂 src/
+├── ☕ Main.java
+├── ☕ Explore.java
+├── ☕ AlchemyTable.java
+├── ☕ CraftedItem.java
+├── ☕ GameState.java
+├── ☕ Guidebook.java
+├── ☕ Inventory.java
+├── ☕ Item.java
+├── ☕ Place.java
+├── ☕ PlaceNotFound.java
+├── ☕ TextUtil.java
+├── ☕ Usable.java
+├── ☕ Weather.java
+└── ☕ Create.java
 ```
+*```plaintextMain.java```
