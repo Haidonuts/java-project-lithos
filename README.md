@@ -1,5 +1,5 @@
-<h1 align="center">╭︵‿୨✧₊⊹☆⊹₊✧୧‿︵╮<br>
-    𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐋𝐈𝐓𝐇𝐎𝐒
+<h1 align="center">·༻𐫱༺·<br>
+    ˗ˋˏ 𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐋𝐈𝐓𝐇𝐎𝐒 ˎˊ-
     ݁</h1>
 <p align="center">
     A console-based rpg where you restore humanity's greatest tools from scratch<br>
@@ -27,3 +27,21 @@
     All game state, item inventory, and character data are handled through structured Java objects and persisted via file handling to ensure seamless continuation between play sessions.
 </p>
 <h2 align="left">݁☘︎Project Structure</h1>
+<p align="left">
+📁src/
+    ├── ☕ Main.java          
+    ├── ☕ Explore.java
+    ├── ☕ AlchemyTable.java
+    ├── ☕ CraftedItem.java
+    ├── ☕ GameState.java
+    ├── ☕ Guidebook.java
+    ├── ☕ Inventory.java
+    ├── ☕ Item.java
+    ├── ☕ Place.java
+    ├── ☕ PlaceNotFound.java
+    ├── ☕ TextUtil.java
+    ├── ☕ Usable.java
+    ├── ☕ Weather.java
+    └── ☕ Create.java
+    <br>
+    * Main.java - Entry point of the program. Initializes all core systems, manages the main game loop, displays the user menu, and handles primary user interactions (choosing actions).
