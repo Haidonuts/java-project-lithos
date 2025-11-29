@@ -1,5 +1,4 @@
-<h1 align="center"> 
-    ꧁⎝ 𓆩༺✧༻𓆪 ⎠꧂<br>
+<h1 align="center">·༻𐫱༺·<br>
     𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐋𝐈𝐓𝐇𝐎𝐒
     ݁</h1>
 <p align="center">
