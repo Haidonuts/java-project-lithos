@@ -9,7 +9,7 @@
     Kate Hannah Bem P. De Leon<br>
     Tremonti C. Canatuan
 </p>
-<h2 align="left">݁☘︎Overview</h1>
+<h2 align="left">݁☘︎Overview</h2>
 <p align="left">
     Project lithos is a console-based Role-Playing Game (RPG) built in Java, designed to challenge the player's knowledge of resource management and chemical logic. The core premise involves the player awakening in a world where humanity has been turned to stone, tasking   them with gathering elements and recreating the tools of civilization.<br>
     <br>
@@ -24,7 +24,7 @@
     <h3>Game Storage</h3>
     All game state, item inventory, and character data are handled through structured Java objects and persisted via file handling to ensure seamless continuation between play sessions.
 </p>
-<h2 align="left">݁☘︎Project Structure</h1>
+<h2 align="left">݁☘︎Project Structure</h2>
 
 ```plaintext
 📂 src/
@@ -122,17 +122,20 @@ The Guide Book is the game's in-system reference library.
 
 <h2>🏛️ OOP PRINCIPLES</h2>
 
-1. 🛡️ Encapsulation
-Encapsulation is the practice of restricting direct access to an object's state and accessing it only through a controlled set of public methods.
-Implementation: All key data in the core classes is declared as private or protected.
-In Inventory, data like rawMaterials, craftedItems, hasFurnace, and fullnessLevel are private .
-In GameState, companion states (kinoRevived, bemRevived, etc.) and game stats are private .
-Control: The data is manipulated only via public getter and setter methods, such as getMaterialCount(), useMaterial(), and setPlatinumChance(). This ensures that game logic (like checking for sufficient materials before using them) is always followed.
-2. ✨ Abstraction
-Abstraction hides the complex implementation details, showing only essential information.
-Implementation: The design uses classes and methods to represent high-level operations without exposing the underlying mechanics.
-File I/O: (Assuming the missing FileHandler from the image analysis exists, which is a common abstraction.) The main game classes don't worry about reading/writing to a file; they just call FileHandler.readAllLines().
-Drop Logic: The Explore class delegates the complicated calculation of drops (including weather multipliers and base success rates) to the DropTable class by simply calling dropTable.getMaterials(...) . The Explore class only cares about the final list of found items, not the probability math involved .
+<h3>1. 🛡️ Encapsulation</h3>
+Encapsulation is the practice of restricting direct access to an object's state and accessing it only through a controlled set of public methods.<br>
+<b>Implementation:</b> All key data in the core classes is declared as private or protected.<br>
+
+In ```Inventory````, data like ```rawMaterials```, ```craftedItems```, ```hasFurnace```, and ```fullnessLevel``` are private.<br>
+
+In ```GameState```, companion states ```(kinoRevived, bemRevived, etc.)``` and game stats are private.<br>
+
+Control: The data is manipulated only via public getter and setter methods, such as ```getMaterialCount()```, ```useMaterial()```, and ```setPlatinumChance()```. This ensures that game logic (like checking for sufficient materials before using them) is always followed.
+<h3>2. ✨ Abstraction</h3>
+Abstraction hides the complex implementation details, showing only essential information.<br>
+<b>Implementation:</b> The design uses classes and methods to represent high-level operations without exposing the underlying mechanics.<br>
+<b>File I/O:</b> The main game classes don't worry about reading/writing to a file; they just call ```FileHandler.readAllLines().```<br>
+<b>Drop Logic:</b> The Explore class delegates the complicated calculation of drops (including weather multipliers and base success rates) to the DropTable class by simply calling dropTable.getMaterials(...) . The Explore class only cares about the final list of found items, not the probability math involved .
 3. 🧬 Inheritance
 Inheritance allows a new class (subclass) to inherit properties and methods from an existing class (superclass).
 Implementation: This is demonstrated through the item hierarchy.
