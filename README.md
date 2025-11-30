@@ -13,7 +13,7 @@
 <p align="left">
     Project lithos is a console-based Role-Playing Game (RPG) built in Java, designed to challenge the player's knowledge of resource management and chemical logic. The core premise involves the player awakening in a world where humanity has been turned to stone, tasking   them with gathering elements and recreating the tools of civilization.<br>
     <br>
-    <h3>Users Can</h3>
+    <h3>👤 Users Can</h3>
     🗺️Explore to find loots<br>
     🛠️Create items<br>
     🧪Experiment using the Alchemy Table<br>
@@ -21,7 +21,7 @@
     💤Sleep to advance the day<br>
     📜Open Guidebook<br>
     <br>
-    <h3>Game Storage</h3>
+    <h3>💾 Game Storage</h3>
     All game state, item inventory, and character data are handled through structured Java objects and persisted via file handling to ensure seamless continuation between play sessions.
 </p>
 <h2 align="left">݁𝄂𝄄Project Structure</h2>
@@ -32,6 +32,7 @@
 ├── ☕ CraftedItem.java
 ├── ☕ Create.java
 ├── ☕ Explore.java
+├── ☕ FileHandler.java
 ├── ☕ GameState.java
 ├── ☕ Guidebook.java
 ├── ☕ Inventory.java
@@ -47,6 +48,7 @@
 - ```Explore.java``` - Handles the Explore command, managing location selection, calculating hazard encounters, and applying resource doubling (Kino's effect).
 - ```AlchemyTable.java``` - Manages the Alchemy command, handling advanced chemical experiments and recipes (e.g., Revival Potion and Platinum bonus yield).
 - ```CraftedItem.java``` - Extends Item and implements Usable. Defines items that can be created by the player and includes the custom useItem logic for unique effects (e.g., Revival Potion logic).
+- ```FileHandler.java``` - Handles saving and loading of game data, including writing to and reading from files.
 - ```GameState.java``` - The central state manager. Tracks day count, exploration limits, current Weather, companion revival status, and permanent game effects (like Bem's 100% craft success).
 - ```Guidebook.java``` - Displays helpful, static game information, including crafting recipes, character traits, and material drops by location.
 - ```Inventory.java``` - Manages the player's entire resource pool, including Raw Materials, Crafted Items, permanent Structures (Furnace), and the gold panning/fullness status.
