@@ -29,20 +29,20 @@
 
 ```plaintext
 📂 src/
-├── ☕ Main.java
-├── ☕ Explore.java
 ├── ☕ AlchemyTable.java
 ├── ☕ CraftedItem.java
+├── ☕ Create.java
+├── ☕ Explore.java
 ├── ☕ GameState.java
 ├── ☕ Guidebook.java
 ├── ☕ Inventory.java
 ├── ☕ Item.java
+├── ☕ Main.java
 ├── ☕ Place.java
 ├── ☕ PlaceNotFound.java
 ├── ☕ TextUtil.java
 ├── ☕ Usable.java
-├── ☕ Weather.java
-└── ☕ Create.java
+└── ☕ Weather.java
 ```
 - ```Main.java``` - Entry point of the program. Initializes all core systems, manages the main game loop, displays the user menu, and handles primary user interactions (choosing actions).<br>
 - ```Explore.java``` - Handles the Explore command, managing location selection, calculating hazard encounters, and applying resource doubling (Kino's effect).
