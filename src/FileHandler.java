@@ -2,10 +2,6 @@ import java.io.*;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Utility class responsible for saving and loading the game state
- * to a text file (persistence via serialization/deserialization).
- */
 public class FileHandler {
     
     private static final String SAVE_FILE = "projectlithos.txt";
@@ -15,8 +11,6 @@ public class FileHandler {
         // Use try-with-resources for PrintWriter and FileWriter
         try (PrintWriter out = new PrintWriter(new FileWriter(SAVE_FILE))) {
 
-            // We must use a getter method here, as 'rawMaterials' is private.
-            // Assuming getRawMaterials() and getCraftedItems() exist in Inventory.
             Map<String, Integer> rawMaterials = gameState.getInventory().getRawMaterials();
             List<CraftedItem> craftedItems = gameState.getInventory().getCraftedItems();
 
@@ -51,7 +45,7 @@ public class FileHandler {
             // --- Crafted Items (Fixing the iteration error) ---
             out.println("craftedItems:");
             for (CraftedItem item : craftedItems) {
-                // Only save the item's name (assuming the description is constant)
+                // Only save the item's name
                 out.println(item.getName());
             }
             out.println("END_CRAFTED");
@@ -71,8 +65,6 @@ public class FileHandler {
             return null; // Return null so Main knows to start a new game
         }
 
-        // We assume a dedicated method exists to handle full inventory reset on load
-        // Inv.clearInventory() is assumed to exist.
         Inventory inv = gameState.getInventory();
         inv.clearInventory(); 
 
@@ -199,3 +191,4 @@ public class FileHandler {
     }
 
 }
+
