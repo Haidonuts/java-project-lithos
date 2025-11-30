@@ -1,5 +1,5 @@
 <h1 align="center">·༻𐫱༺·<br>
-    ˗ˋˏ 𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐋𝐈𝐓𝐇𝐎𝐒 ˎˊ-
+    ꧁‿̩͙‿୨𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐋𝐈𝐓𝐇𝐎𝐒 ୧‿̩͙‿꧂
     ݁</h1>
 <p align="center">
     A console-based rpg where you restore humanity's greatest tools from scratch<br>
@@ -72,3 +72,5 @@ Run the program using:
 ```plaintext
 java Main
 ```
+
+<h2 align="left">݁☘︎Features</h1>
