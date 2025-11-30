@@ -62,4 +62,6 @@
 <h3>How to Run the Program</h3>
 <p align="left">
     Open your terminal in the ```/src``` folder and run:
-    ```
+    ```javac *.java```
+    Then run the program using:
+    ```java Main```
