@@ -10,7 +10,7 @@
     Tremonti C. Canatuan
 </p>
 <h2 align="left">݁☘︎Overview</h1>
-<p align="left">
+
     Project lithos is a console-based Role-Playing Game (RPG) built in Java, designed to challenge the player's knowledge of resource management and chemical logic. The core premise involves the player awakening in a world where humanity has been turned to stone, tasking   them with gathering elements and recreating the tools of civilization.<br>
     <br>
     <h3>Users Can</h3>
@@ -24,7 +24,7 @@
     <h3>Game Storage</h3>
     <br>
     All game state, item inventory, and character data are handled through structured Java objects and persisted via file handling to ensure seamless continuation between play sessions.
- </p>
+
 <h2 align="left">݁☘︎Project Structure</h1>
 
 ```plaintext
@@ -74,10 +74,11 @@ java Main
 ```
 
 <h2 align="left">݁☘︎Features</h1>
-<b>Exploration & Gathering</b>
-
-<b>Daily Attempts:</b> Players have a limited number of explorations per day (default is 10).
-<b>Place Selection:</b> Players can choose to explore different places like River, Forest, Rocky Beach, Cave, or Deep Sea Shore to find raw materials .
-<b>Unlocking Locations:</b> The Cave is unlocked by finding a Map Fragment . The Deep Sea Shore is unlocked on Day 5 .
-<b>Weather Effects:</b> A daily weather condition is generated which applies a multiplier to drop chances .
+<p align="left">
+<h4>Exploration & Gathering</h4>
+    
+<b>Daily Attempts:</b> Players have a limited number of explorations per day (default is 10).<br>
+<b>Place Selection:</b> Players can choose to explore different places like River, Forest, Rocky Beach, Cave, or Deep Sea Shore to find raw materials .<br>
+<b>Unlocking Locations:</b> The Cave is unlocked by finding a Map Fragment . The Deep Sea Shore is unlocked on Day 5 .<br>
+<b>Weather Effects:</b> A daily weather condition is generated which applies a multiplier to drop chances .<br>
 <b>Hazards:</b> Exploring has a small chance (5%) of encountering a hazard, which can be mitigated by using certain materials (Stone, Cooked Meat) or may result in loss of items/fullness .
