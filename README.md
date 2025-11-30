@@ -4,7 +4,7 @@
 <p align="center">
     A console-based rpg where you restore humanity's greatest tools from scratch<br>
     <br>
-    CS 2103<br>
+    <b>CS 2103</b><br>
     Haidie N. Fanoga<br>
     Kate Hannah Bem P. De Leon<br>
     Tremonti C. Canatuan
