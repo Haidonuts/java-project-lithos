@@ -120,13 +120,15 @@ The Guide Book is the game's in-system reference library.
 
 </p>
 
-<h2>🏛️ OOP PRINCIPLES</h2>
+<h2>🏛️ Object-oriented Principles</h2>
 
 <h3>1. 🛡️ Encapsulation</h3>
 Encapsulation is the practice of restricting direct access to an object's state and accessing it only through a controlled set of public methods.<br>
+
 <b>Implementation:</b> 
 
 - All internal state variables are hidden. For example, ```currentDay```, ```rawMaterials``` map, and ```hasFurnace``` status are private.<br>
+
 <b>Controlled Access:</b>
 
 - The core logic relies on public accessors like ```getCurrentDay()``` and ```hasFurnace().```
@@ -138,6 +140,7 @@ Abstraction focuses on simplifying complexity by hiding low-level details and pr
 <b>File Handling Abstraction:</b> The ```FileHandler``` class completely hides the complexities of Java's file I/O (handling try-catch blocks, FileWriter, parsing text lines).
 
 - The Main class only interacts with the methods ```FileHandler.saveGame(gameState)``` and ```FileHandler.loadGame(gameState).``` The complex process of converting the entire game state into a structured text file and reading it back is entirely abstracted away.
+  
 <b>Game Logic Abstraction:</b>
 
 - The Explore class delegates probability calculation to the ```DropTable.``` When Explore calls ```dropTable.getMaterials(...)```, it only cares about the final list of items returned, not the intricate math involving weather multipliers and base success rates that runs internally in the ```DropTable.```
