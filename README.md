@@ -113,7 +113,6 @@ The Guide Book is the game's in-system reference library.
 - Shows all craftable items, their recipes, and the 70% base success rate .
 - Explains the unique effects of Kino, Bem, and Akio .
 - Lists all explorable locations and the raw/special materials that can be found there, including unlock conditions (e.g., Map Fragment, Day 5) .
-
 <h3>Sleep</h3>
 <b>Function:</b> Sleeping advances the game to the next day and is the primary way to reset the daily exploration limit back to the maximum of 10 attempts.<br>
 <b>Weather:</b> It also generates the weather condition for the new day, which impacts resource drop chances.
@@ -162,3 +161,103 @@ Polymorphism allows a single action (method call) to behave differently dependin
 
 - This is achieved through the Usable interface, which defines the contract ```useItem(Inventory inventory).``` The ```CraftedItem``` implements this contract.
 - The Inventory's ```useItemLogic()``` method takes a generic ```CraftedItem.``` The logic uses a switch statement on the item's name (e.g., "revival potion" vs. "spear") to execute unique, specific behavior at runtime.
+
+<h2>Example Output</h2>
+
+```plaintext
+Welcome to Project Lithos!
+
+
+Over the horizon, a vast blue light swelled and crept across the land.
+
+When it finally reached you !BOOM! everything changed. The moment it touched your skin, you turned to stone. Every conscious being did.
+Civilization shattered. Time washed over the world like a tidal wave.
+
+Dot... Dot... Dot... Dot... CRACK
+
+3,000 years later, you awaken.
+
+Alone.
+
+All around you stand the petrified faces of the past.
+Kino, your high-school best friend, a genius in geography.
+Bem, the master craftsman of your class.
+Akio, the athletic, ambitious senior who never backed down from a challenge.
+They're frozen, waiting.
+
+Humanity has fallen silent and you are its first voice in millennia.
+Your mission: restore civilization's greatest weapons; knowledge, technology, and HOPE.
+Your choices will determine the future.
+--------------------------
+
+Press ENTER to begin Day 1...
+
+--- (Day 1) ---
+1. Explore [10 attempts left]
+2. Create
+3. Inventory & Tools
+4. Guide Book
+5. Alchemy
+6. Sleep
+7. Save Game
+8. Load Game
+9. Exit
+Enter your choice: 1
+
+--- Exploration (Day 1: 10 attempts left) ---
+Weather: Normal Day (Exploration yields are standard.)
+Available Places: 1. River  2. Forest  3. Rocky Beach
+Enter place (Name/Number) or 'back': 2
+
+Exploring the Forest...
+Oh no! You encountered a hazard.
+You narrowly escaped, but are exhausted (Fullness reset).
+
+--- Exploration (Day 1: 9 attempts left) ---
+Weather: Normal Day (Exploration yields are standard.)
+Available Places: 1. River  2. Forest  3. Rocky Beach
+Enter place (Name/Number) or 'back':
+```
+
+<h2>projectlithos.txt Snippet</h2>
+
+```plaintext
+day=1
+explorationsLeft=6
+hasMapFragment=false
+fullness=0
+platinumChance=1
+furnace=false
+alchemy=false
+revivedKino=false
+revivedBem=false
+revivedAkio=false
+weather=NORMAL
+rawMaterials:
+wood=2
+clay=1
+END_RAW
+craftedItems:
+END_CRAFTED
+```
+<h2>Contributors</h2>
+
+<table>
+  <tr>
+    <th> </th>
+    <th>Name</th>
+    <th>Role</th>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="IMAGE_LINK_1" width="120" />
+    </td>
+    <td>
+      <strong>Haidie N. Fanoga</strong><br>
+      <a href="GITHUB_LINK_1">
+        <img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white">
+      </a>
+    </td>
+    <td>Project Leader / System Architect</td>
+  </tr>
