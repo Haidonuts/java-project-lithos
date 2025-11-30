@@ -13,7 +13,7 @@
 <p align="left">
     Project lithos is a console-based Role-Playing Game (RPG) built in Java, designed to challenge the player's knowledge of resource management and chemical logic. The core premise involves the player awakening in a world where humanity has been turned to stone, tasking   them with gathering elements and recreating the tools of civilization.<br>
     <br>
-    ###Users Can
+    <h3>Users Can</h3>
     <br>
     🗺️Explore to find loots<br>
     🛠️Create items<br>
