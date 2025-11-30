@@ -251,7 +251,7 @@ END_CRAFTED
 
   <tr>
     <td>
-      <img src="IMAGE_LINK_1" width="120" />
+      <img src="static/1d2ce21e-58b2-4c5f-ada2-62d5f72dd384.jpg" width="120" />
     </td>
     <td>
       <strong>Haidie N. Fanoga</strong><br>
