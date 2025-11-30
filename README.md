@@ -114,10 +114,10 @@ java Main
 <h3>📜Guide Book</h3>
 The Guide Book is the game's in-system reference library.
 <b>Function:</b> It displays essential game information when accessed via the Main Menu.
-
 - Shows all craftable items, their recipes, and the 70% base success rate .
 - Explains the unique effects of Kino, Bem, and Akio .
 - Lists all explorable locations and the raw/special materials that can be found there, including unlock conditions (e.g., Map Fragment, Day 5) .
+
 <h3>💤Sleep</h3>
 <b>Function:</b> Sleeping advances the game to the next day and is the primary way to reset the daily exploration limit back to the maximum of 10 attempts.<br>
 <b>Weather:</b> It also generates the weather condition for the new day, which impacts resource drop chances.
