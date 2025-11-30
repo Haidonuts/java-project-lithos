@@ -287,3 +287,9 @@ END_CRAFTED
     </td>
     <td>Feature Developer</td>
   </tr>
+
+<h2>Acknowledgement</h2>
+We sincerely express our deep gratitude to Ms. Fatima Marie P. Agdon for her insightful guidance and steadfast support provided throughout the completion of Project Lithos. We also extend our appreciation to our Classmates and Peers for their invaluable cooperation, encouragement, and helpful discussions during the entire development process.
+
+<h2>Disclaimer</h2>
+Project Lithos is a demonstration of Object-Oriented Programming (OOP) concepts in Java and is intended for educational purposes only. This is a text-based, command-line game prototype and does not represent a full, commercial software product. While we have implemented error handling, the stability of the game may depend on the successful compilation and proper execution environment (e.g., Java Runtime Environment).
