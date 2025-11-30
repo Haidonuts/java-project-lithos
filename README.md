@@ -287,7 +287,7 @@ END_CRAFTED
     </td>
     <td>Feature Developer</td>
   </tr>
-
+</table>
 <h2>Acknowledgement</h2>
 We sincerely express our deep gratitude to Ms. Fatima Marie P. Agdon for her insightful guidance and steadfast support provided throughout the completion of Project Lithos. We also extend our appreciation to our Classmates and Peers for their invaluable cooperation, encouragement, and helpful discussions during the entire development process.
 
