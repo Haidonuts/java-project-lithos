@@ -7,9 +7,8 @@ import java.util.Map;
  * to a text file (persistence via serialization/deserialization).
  */
 public class FileHandler {
-
-    // Changed file extension to .txt to match the implementation style
-    private static final String SAVE_FILE = "savefile.txt";
+    
+    private static final String SAVE_FILE = "projectlithos.txt";
 
     // ===================== SAVE GAME =====================
     public static void saveGame(GameState gameState) {
@@ -198,4 +197,5 @@ public class FileHandler {
     public static boolean saveExists() {
         return new File(SAVE_FILE).exists();
     }
+
 }
