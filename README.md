@@ -79,24 +79,24 @@ java Main
 
 <h2 align="left">݁𝄂𝄄Features</h1>
 <p align="left">
-<h3>Exploration & Gathering</h3>
+<h3>🗺️Exploration & Gathering</h3>
 <b>Daily Attempts:</b> Players have a limited number of explorations per day (default is 10).<br>
 <b>Place Selection:</b> Players can choose to explore different places like River, Forest, Rocky Beach, Cave, or Deep Sea Shore to find raw materials.<br>
 <b>Unlocking Locations:</b> The Cave is unlocked by finding a Map Fragment . The Deep Sea Shore is unlocked on Day 5 .<br>
 <b>Weather Effects:</b> A daily weather condition is generated which applies a multiplier to drop chances.<br>
 <b>Hazards:</b> Exploring has a small chance (5%) of encountering a hazard, which can be mitigated by using certain materials (Stone, Cooked Meat) or may result in loss of items/fullness.
 
-<h3>Crafting & Structure Building</h3>
+<h3>🛠️Crafting & Structure Building</h3>
 <b>Basic Crafting:</b> Players can craft items like Furnace, Alchemy Table, Spear, and Wooden Batea from raw materials.<br>
 <b>Craft Success Rate:</b> Crafting has a 70% base success rate unless the special companion Bem is revived.<br>
 <b>Permanent Structures:</b> Structures like the Furnace and Alchemy Table are built once and remain permanent additions to the player's capabilities.
 
-<h3>Alchemy & Processing</h3>
+<h3>🧪Alchemy & Processing</h3>
 <b>Furnace Operations:</b> The Furnace is used to process items like Raw Meat into Cooked Meat and Sand + Limestone into Glass.<br>
 <b>Alchemy Table Operations:</b> The Alchemy Table is used for multi-step crafting, specifically fermenting Grapes into Alcohol and mixing a Revival Potion from Nitric Acid + Alcohol.<br>
 <b>Potion Yield:</b> Platinum can be optionally added to the Revival Potion mix to double the yield .
 
-<h3>Companion Revival & Effects</h3>
+<h3>💊Companion Revival & Effects</h3>
 <b>Companion Types:</b> The game features three key companions who are initially petrified (Kino, Bem, and Akio).<br>
 
 - Kino: Doubles raw materials found during exploration.<br>
@@ -105,20 +105,20 @@ java Main
 <b>Revival Potion:</b> A Revival Potion is used to revive one of the three companions.<br>
 <b>Game Goal:</b> The game is won when all three companions are revived.
 
-<h3>Tools and Status</h3>
+<h3>⚙️Tools and Status</h3>
 <b>Wooden Batea:</b> A reusable tool used for Gold Panning, which has a chance to find Gold and Platinum.<br>
 
 <b>Fullness:</b> Eating Cooked Meat sets the ```fullnessLevel``` to 5, which resets the daily exploration limit and doubles the Platinum chance for gold panning.<br>
 <b>Spear:</b> A consumable weapon used for Hunting to find Raw Meat.
 
-<h3>Guide Book</h3>
+<h3>📜Guide Book</h3>
 The Guide Book is the game's in-system reference library.
 <b>Function:</b> It displays essential game information when accessed via the Main Menu.
 
 - Shows all craftable items, their recipes, and the 70% base success rate .
 - Explains the unique effects of Kino, Bem, and Akio .
 - Lists all explorable locations and the raw/special materials that can be found there, including unlock conditions (e.g., Map Fragment, Day 5) .
-<h3>Sleep</h3>
+<h3>💤Sleep</h3>
 <b>Function:</b> Sleeping advances the game to the next day and is the primary way to reset the daily exploration limit back to the maximum of 10 attempts.<br>
 <b>Weather:</b> It also generates the weather condition for the new day, which impacts resource drop chances.
 
