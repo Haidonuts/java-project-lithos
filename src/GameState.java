@@ -135,4 +135,30 @@ public class GameState {
     public boolean allCompanionsRevived() { 
         return kinoRevived && bemRevived && akioRevived;
     }
+
+    // --- REQUIRED SETTERS FOR FILEHANDLER.JAVA ---
+    
+    /**
+     * Sets the current game day, used only during game loading.
+     * @param day The day number to set.
+     */
+    public void setDay(int day) {
+        this.currentDay = day;
+    }
+
+    /**
+     * Sets the number of explorations remaining, used only during game loading.
+     * @param explorations The number of explorations left.
+     */
+    public void setExplorationsLeft(int explorations) {
+        this.explorationsLeft = explorations;
+    }
+
+    /**
+     * Sets the current weather condition from the loaded save file.
+     * @param weather The Weather enum value to set.
+     */
+    public void setTodayWeather(Weather weather) {
+        this.todayWeather = weather;
+    }
 }
