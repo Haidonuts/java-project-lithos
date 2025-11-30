@@ -62,6 +62,10 @@
 <h3>How to Run the Program</h3>
     Open your File Explorer and navigate into the ```java-project-lithos``` folder
     Open your terminal in the ```/src``` folder and run:
-    ```javac *.java```
+    ```plaintext 
+    javac *.java
+    ```
     Then run the program using:
-    ```java Main```
+    ```plaintext 
+    java Main
+    ```
