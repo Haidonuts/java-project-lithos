@@ -59,6 +59,9 @@
 - ```Create.java``` - Manages the Craft command, handling material consumption for permanent structures and basic tool construction, incorporating success rate logic.
   
 <h3>How to Run the Program</h3>
+Clone the Repository in your terminal using:
+
+```git clone https://github.com/Haidonuts/java-project-lithos.git```
 
 Open your File Explorer and navigate into the ```java-project-lithos``` folder.
 
