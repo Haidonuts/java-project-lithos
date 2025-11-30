@@ -13,7 +13,7 @@
 <p align="left">
     Project lithos is a console-based Role-Playing Game (RPG) built in Java, designed to challenge the player's knowledge of resource management and chemical logic. The core premise involves the player awakening in a world where humanity has been turned to stone, tasking   them with gathering elements and recreating the tools of civilization.<br>
     <br>
-    <b>Users Can</b><br>
+    <h4 align="center"><b>Users Can</b><br>
     <br>
     🗺️Explore to find loots<br>
     🛠️Create items<br>
@@ -59,3 +59,5 @@
 - ```Usable.java``` - An interface defining the contract for any item that can be "used" by the player (e.g., CraftedItem).
 - ```Weather.java``` - An Enum defining various weather conditions, their descriptions, and the multiplier they apply to the DropTable for resource chances.
 - ```Create.java``` - Manages the Craft command, handling material consumption for permanent structures and basic tool construction, incorporating success rate logic.
+  
+
