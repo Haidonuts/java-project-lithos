@@ -74,3 +74,10 @@ java Main
 ```
 
 <h2 align="left">݁☘︎Features</h1>
+<b>Exploration & Gathering</b>
+
+<b>Daily Attempts:</b> Players have a limited number of explorations per day (default is 10).
+<b>Place Selection:</b> Players can choose to explore different places like River, Forest, Rocky Beach, Cave, or Deep Sea Shore to find raw materials .
+<b>Unlocking Locations:</b> The Cave is unlocked by finding a Map Fragment . The Deep Sea Shore is unlocked on Day 5 .
+<b>Weather Effects:</b> A daily weather condition is generated which applies a multiplier to drop chances .
+<b>Hazards:</b> Exploring has a small chance (5%) of encountering a hazard, which can be mitigated by using certain materials (Stone, Cooked Meat) or may result in loss of items/fullness .
