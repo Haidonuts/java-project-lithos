@@ -124,27 +124,33 @@ The Guide Book is the game's in-system reference library.
 
 <h3>1. 🛡️ Encapsulation</h3>
 Encapsulation is the practice of restricting direct access to an object's state and accessing it only through a controlled set of public methods.<br>
-<b>Implementation:</b> All key data in the core classes is declared as private or protected.<br>
+<b>Implementation:</b> All internal state variables are hidden. For example, ```currentDay```, ```rawMaterials``` map, and ```hasFurnace``` status are private.<br>
+<b>Controlled Access:</b>
 
-In ```Inventory````, data like ```rawMaterials```, ```craftedItems```, ```hasFurnace```, and ```fullnessLevel``` are private.<br>
+- The core logic relies on public accessors like ```getCurrentDay()``` and ```hasFurnace().```
 
-In ```GameState```, companion states ```(kinoRevived, bemRevived, etc.)``` and game stats are private.<br>
-
-Control: The data is manipulated only via public getter and setter methods, such as ```getMaterialCount()```, ```useMaterial()```, and ```setPlatinumChance()```. This ensures that game logic (like checking for sufficient materials before using them) is always followed.
+- The FileHandler needs to save this private data. Instead of making the fields public, new dedicated access methods were created: ```getRawMaterials()```, ```getCraftedItems()```, ```setFullnessLevel()```, and various setters in ```GameState``` ```(e.g., setDay(), setExplorationsLeft()). ```
 <h3>2. ✨ Abstraction</h3>
-Abstraction hides the complex implementation details, showing only essential information.<br>
-<b>Implementation:</b> The design uses classes and methods to represent high-level operations without exposing the underlying mechanics.<br>
-<b>File I/O:</b> The main game classes don't worry about reading/writing to a file; they just call ```FileHandler.readAllLines().```<br>
-<b>Drop Logic:</b> The Explore class delegates the complicated calculation of drops (including weather multipliers and base success rates) to the DropTable class by simply calling dropTable.getMaterials(...) . The Explore class only cares about the final list of found items, not the probability math involved .
-3. 🧬 Inheritance
-Inheritance allows a new class (subclass) to inherit properties and methods from an existing class (superclass).
-Implementation: This is demonstrated through the item hierarchy.
-The CraftedItem class extends the Item abstract class.
-CraftedItem reuses the name field and the constructor logic from its parent class via super(name) .
-The PlaceNotFoundException class extends the base Java Exception class to create a custom, domain-specific error .
-4. 🔄 Polymorphism
-Polymorphism allows objects of different classes to be treated as objects of a common type, leading to flexible code.
-Implementation: This is achieved through the abstract Item class and the use of the Usable interface (implied by the @Override annotation).
-The Inventory stores a List<CraftedItem>.
-When an item is used, the Inventory calls useItemLogic(item). The switch statement inside useItemLogic then performs different actions based on the specific object's type (e.g., "revival potion" vs. "spear" vs. "wooden batea") .
-The specific method that runs (the logic for using a Spear versus using a Revival Potion) is determined at runtime, which is a classic application of polymorphism .
+Abstraction focuses on simplifying complexity by hiding low-level details and presenting a clean, easy-to-use interface.<br>
+
+<b>File Handling Abstraction:</b> The ```FileHandler``` class completely hides the complexities of Java's file I/O (handling try-catch blocks, FileWriter, parsing text lines).
+
+The Main class only interacts with the methods ```FileHandler.saveGame(gameState)``` and ```FileHandler.loadGame(gameState).``` The complex process of converting the entire game state into a structured text file and reading it back is entirely abstracted away.
+<b>Game Logic Abstraction:</b>
+
+The Explore class delegates probability calculation to the ```DropTable.``` When Explore calls ```dropTable.getMaterials(...)```, it only cares about the final list of items returned, not the intricate math involving weather multipliers and base success rates that runs internally in the ```DropTable.```
+
+The Inventory class abstracts item usage; when an item is used, the main code calls ```useItemLogic(item)```, hiding the specific implementation details like decreasing fullness, resetting exploration limits, or granting raw meat.
+
+<h3>3. 🧬 Inheritance</h3>
+Inheritance allows classes to inherit fields and methods from a parent class, promoting code reuse and establishing an "is-a" relationship.<br>
+<b>Item Hierarchy:</b>
+
+- The concrete ```CraftedItem``` class inherits from the Item abstract class. This ensures all crafted items automatically have a name field and access to the ```getName()``` method without redefining that common data.
+- The ```PlaceNotFoundException``` class extends the standard Java Exception class, demonstrating how to specialize built-in functionality.
+
+<h3>5. 🔄 Polymorphism</h3>
+Polymorphism allows a single action (method call) to behave differently depending on the object it is acting upon, achieving a "many forms" capability.
+
+<b>Interface Implementation:</b> This is achieved through the Usable interface, which defines the contract ```useItem(Inventory inventory)```. The ```CraftedItem``` implements this contract.
+The Inventory's ```useItemLogic()``` method takes a generic ```CraftedItem.``` The logic uses a switch statement on the item's name (e.g., "revival potion" vs. "spear") to execute unique, specific behavior at runtime.
