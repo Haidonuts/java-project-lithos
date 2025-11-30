@@ -84,7 +84,9 @@ public class Main {
                     case 4 -> guideBook.displayGuideBook();
                     case 5 -> enterAlchemyMenu();
                     case 6 -> enterSleepMenu();
-                    case 7 -> { exitGame(); return; }
+                    case 7 -> FileHandler.saveGame(gameState);
+                    case 8 -> FileHandler.loadGame(gameState); 
+                    case 9 -> { exitGame(); return; }
                     default -> System.out.println("Invalid choice. Please try again.");
                 }
 
@@ -158,7 +160,9 @@ public class Main {
         System.out.println("4. Guide Book");
         System.out.println("5. Alchemy");
         System.out.println("6. Sleep");
-        System.out.println("7. Exit");
+        System.out.println("7. Save Game");
+        System.out.println("8. Load Game");
+        System.out.println("9. Exit");
         System.out.print("Enter your choice: ");
     }
 
@@ -213,3 +217,4 @@ public class Main {
         try { sc.close(); } catch (Exception ignored) {}
     }
 }
+
