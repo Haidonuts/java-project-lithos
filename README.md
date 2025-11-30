@@ -60,7 +60,6 @@
 - ```Create.java``` - Manages the Craft command, handling material consumption for permanent structures and basic tool construction, incorporating success rate logic.
   
 <h3>How to Run the Program</h3>
-<p align="left">
     ```plaintext 
     Open your File Explorer and navigate into the ```java-project-lithos``` folder
     Open your terminal in the ```/src``` folder and run:
