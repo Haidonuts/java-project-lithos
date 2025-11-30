@@ -9,7 +9,7 @@
     Kate Hannah Bem P. De Leon<br>
     Tremonti C. Canatuan
 </p>
-<h2 align="left">݁☘︎Overview</h2>
+<h2 align="left">݁𝄂𝄄Overview</h2>
 <p align="left">
     Project lithos is a console-based Role-Playing Game (RPG) built in Java, designed to challenge the player's knowledge of resource management and chemical logic. The core premise involves the player awakening in a world where humanity has been turned to stone, tasking   them with gathering elements and recreating the tools of civilization.<br>
     <br>
@@ -24,7 +24,7 @@
     <h3>Game Storage</h3>
     All game state, item inventory, and character data are handled through structured Java objects and persisted via file handling to ensure seamless continuation between play sessions.
 </p>
-<h2 align="left">݁☘︎Project Structure</h2>
+<h2 align="left">݁𝄂𝄄Project Structure</h2>
 
 ```plaintext
 📂 src/
@@ -72,7 +72,7 @@ Run the program using:
 java Main
 ```
 
-<h2 align="left">݁☘︎Features</h1>
+<h2 align="left">݁𝄂𝄄Features</h1>
 <p align="left">
 <h3>Exploration & Gathering</h3>
 <b>Daily Attempts:</b> Players have a limited number of explorations per day (default is 10).<br>
@@ -162,7 +162,7 @@ Polymorphism allows a single action (method call) to behave differently dependin
 - This is achieved through the Usable interface, which defines the contract ```useItem(Inventory inventory).``` The ```CraftedItem``` implements this contract.
 - The Inventory's ```useItemLogic()``` method takes a generic ```CraftedItem.``` The logic uses a switch statement on the item's name (e.g., "revival potion" vs. "spear") to execute unique, specific behavior at runtime.
 
-<h2>Example Output</h2>
+<h2>𝄂𝄄Example Output</h2>
 
 ```plaintext
 Welcome to Project Lithos!
@@ -219,7 +219,7 @@ Available Places: 1. River  2. Forest  3. Rocky Beach
 Enter place (Name/Number) or 'back':
 ```
 
-<h2>projectlithos.txt Snippet</h2>
+<h2>𝄂𝄄projectlithos.txt Snippet</h2>
 
 ```plaintext
 day=1
@@ -240,7 +240,7 @@ END_RAW
 craftedItems:
 END_CRAFTED
 ```
-<h2>Contributors</h2>
+<h2>𝄂𝄄Contributors</h2>
 
 <table>
   <tr>
@@ -288,8 +288,8 @@ END_CRAFTED
     <td>Feature Developer</td>
   </tr>
 </table>
-<h2>Acknowledgement</h2>
+<h2>𝄂𝄄Acknowledgement</h2>
 We sincerely express our deep gratitude to Ms. Fatima Marie P. Agdon for her insightful guidance and steadfast support provided throughout the completion of Project Lithos. We also extend our appreciation to our Classmates and Peers for their invaluable cooperation, encouragement, and helpful discussions during the entire development process.
 
-<h2>Disclaimer</h2>
-Project Lithos is a demonstration of Object-Oriented Programming (OOP) concepts in Java and is intended for educational purposes only. This is a text-based, command-line game prototype and does not represent a full, commercial software product. While we have implemented error handling, the stability of the game may depend on the successful compilation and proper execution environment (e.g., Java Runtime Environment).
+<h2>𝄂𝄄Disclaimer</h2>
+Project Lithos is a demonstration of Object-Oriented Programming (OOP) concepts in Java and is intended for educational purposes only. This is a text-based, command-line game prototype and does not represent a full, commercial software product. While we have implemented error handling, the stability of the game may depend on the successful compilation and proper execution environment.
