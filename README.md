@@ -97,7 +97,6 @@ java Main
 - Kino: Doubles raw materials found during exploration.<br>
 - Bem: Guarantees 100% craft success.<br>
 - Akio: Upon revival, clears the player's inventory and then occasionally steals a crafted item after successful exploration.
-
 <b>Revival Potion:</b> A Revival Potion is used to revive one of the three companions.<br>
 <b>Game Goal:</b> The game is won when all three companions are revived.
 
