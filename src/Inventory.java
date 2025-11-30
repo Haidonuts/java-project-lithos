@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Inventory {
 
+    // --- Private fields ---
     private final Map<String, Integer> rawMaterials = new HashMap<>();
     private final List<CraftedItem> craftedItems = new ArrayList<>();
     private final Set<String> uniqueDeepSeaItems = new HashSet<>();
@@ -9,6 +10,7 @@ public class Inventory {
     private boolean doubleEffect = false;
     private boolean hasFurnace = false;
     private boolean hasAlchemyTable = false;
+
     private int fullnessLevel = 0;
 
     private final GameState gameState;
@@ -23,6 +25,20 @@ public class Inventory {
         return gameState;
     }
 
+    // ---------- Added for FileHandler ----------
+    public Map<String, Integer> getRawMaterials() {
+        return rawMaterials;
+    }
+
+    public List<CraftedItem> getCraftedItems() {
+        return craftedItems;
+    }
+
+    public void setFullnessLevel(int value) {
+        this.fullnessLevel = value;
+    }
+
+    // ---------- Deep Sea ----------
     public void addDeepSeaItemFound(String item) {
         uniqueDeepSeaItems.add(item.toLowerCase());
     }
@@ -35,7 +51,7 @@ public class Inventory {
         uniqueDeepSeaItems.clear();
     }
 
-    
+    // ---------- Raw Materials ----------
     public void addRawMaterial(String name, int quantity) {
         String key = name.toLowerCase();
 
@@ -73,10 +89,22 @@ public class Inventory {
         return false;
     }
 
+    // ---------- Crafted Items ----------
     public void addCraftedItem(CraftedItem ci) {
         craftedItems.add(ci);
     }
 
+    public int getCraftedItemCount() {
+        return craftedItems.size();
+    }
+
+    public void removeRandomCraftedItem() {
+        if (!craftedItems.isEmpty()) {
+            craftedItems.remove(random.nextInt(craftedItems.size()));
+        }
+    }
+
+    // ---------- Structures ----------
     public void registerStructure(String name) {
         switch (name.toLowerCase()) {
             case "furnace" -> hasFurnace = true;
@@ -84,7 +112,15 @@ public class Inventory {
         }
     }
 
-    // --- Inventory Display ---
+    public boolean hasFurnace() { return hasFurnace; }
+    public boolean hasAlchemyTable() { return hasAlchemyTable; }
+
+    public boolean hasWoodenBatea() {
+        return craftedItems.stream()
+                .anyMatch(t -> t.getName().equalsIgnoreCase("Wooden Batea"));
+    }
+
+    // ---------- Display ----------
     public void showInventory() {
         System.out.println("=== Raw Materials Gathered ===");
 
@@ -117,6 +153,7 @@ public class Inventory {
         System.out.println("- Alchemy Table: " + (hasAlchemyTable ? "Ready" : "Not Built"));
     }
 
+    // ---------- Crafted Item Use ----------
     public void useCraftedItem(int index) {
         try {
             CraftedItem item = craftedItems.get(index);
@@ -132,7 +169,7 @@ public class Inventory {
         }
     }
 
-    // --- Tools & Food ---
+    // ---------- Tools & Food ----------
     public void processToolsAndFood() {
 
         boolean canOperate =
@@ -183,6 +220,7 @@ public class Inventory {
         }
     }
 
+    // ---------- Gold Panning ----------
     private void performGoldPanning() {
         int multiplier = gameState.getPlatinumChance();
         int platChance = 1 * multiplier;
@@ -220,6 +258,7 @@ public class Inventory {
         }
     }
 
+    // ---------- Item Logic ----------
     private void useItemLogic(CraftedItem item) {
         String name = item.getName().toLowerCase();
 
@@ -244,7 +283,6 @@ public class Inventory {
                         return;
                     }
 
-                    // FIXED: Chain of ifs → rule switch
                     switch (choice) {
                         case 1 -> gameState.reviveKino();
                         case 2 -> gameState.reviveBem();
@@ -275,7 +313,7 @@ public class Inventory {
         }
     }
 
-    // --- Helpers ---
+    // ---------- Helpers ----------
     public void setDoubleEffect(boolean value) {
         doubleEffect = value;
     }
@@ -297,29 +335,6 @@ public class Inventory {
         gameState.setPlatinumChance(1);
 
         System.out.println("Inventory cleared!");
-    }
-
-    public int getCraftedItemCount() {
-        return craftedItems.size();
-    }
-
-    public boolean hasFurnace() {
-        return hasFurnace;
-    }
-
-    public boolean hasAlchemyTable() {
-        return hasAlchemyTable;
-    }
-
-    public boolean hasWoodenBatea() {
-        return craftedItems.stream()
-                .anyMatch(t -> t.getName().equalsIgnoreCase("Wooden Batea"));
-    }
-
-    public void removeRandomCraftedItem() {
-        if (!craftedItems.isEmpty()) {
-            craftedItems.remove(random.nextInt(craftedItems.size()));
-        }
     }
 
     public int getFullnessLevel() {
