@@ -102,5 +102,8 @@ java Main
 
 <h3>Tools and Status</h3>
 <b>Wooden Batea:</b> A reusable tool used for Gold Panning, which has a chance to find Gold and Platinum.<br>
-<b>Fullness:</b> Eating Cooked Meat sets the fullnessLevel to 5, which resets the daily exploration limit and doubles the Platinum chance for gold panning.<br>
+
+<b>Fullness:</b> Eating Cooked Meat sets the ```fullnessLevel``` to 5, which resets the daily exploration limit and doubles the Platinum chance for gold panning.<br>
 <b>Spear:</b> A consumable weapon used for Hunting to find Raw Meat.
+
+</p>
