@@ -251,13 +251,39 @@ END_CRAFTED
 
   <tr>
     <td>
-      <img src="static/1d2ce21e-58b2-4c5f-ada2-62d5f72dd384.jpg" width="120" />
+      <img src="static/446d46fb-dee0-4a53-bfee-2d288dcbe5d9.jpg" width="120" />
     </td>
     <td>
       <strong>Haidie N. Fanoga</strong><br>
-      <a href="GITHUB_LINK_1">
+      <a href="(https://github.com/Haidonuts)">
         <img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white">
       </a>
     </td>
     <td>Project Leader / System Architect</td>
+  </tr>
+  
+  <tr>
+    <td>
+      <img src="static/1d2ce21e-58b2-4c5f-ada2-62d5f72dd384.jpg" width="120" />
+    </td>
+    <td>
+      <strong>Kate Hannah Bem P. De leon</strong><br>
+      <a href="(https://github.com/kateehannah)">
+        <img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white">
+      </a>
+    </td>
+    <td>Feature Developer</td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="static/1dd80d10-3b34-431e-929e-3028481cca24.jpg" width="120" />
+    </td>
+    <td>
+      <strong>Tremonti C. Canatuan</strong><br>
+      <a href="(https://github.com/tremonts)">
+        <img src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white">
+      </a>
+    </td>
+    <td>Feature Developer</td>
   </tr>
