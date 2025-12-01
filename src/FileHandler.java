@@ -57,7 +57,7 @@ public class FileHandler {
         }
     }
 
-    // ===================== LOAD GAME =====================
+    //LOAD GAME
     public static GameState loadGame(GameState gameState) {
         File file = new File(SAVE_FILE);
         if (!file.exists()) {
@@ -123,22 +123,18 @@ public class FileHandler {
 
                     switch (key) {
                         case "day" -> {
-                            // Uses setDay(int) which is now in GameState.java
                             intValue = Integer.parseInt(value);
                             gameState.setDay(intValue); 
                         }
                         case "explorationsLeft" -> {
-                            // Uses setExplorationsLeft(int) which is now in GameState.java
                             intValue = Integer.parseInt(value);
                             gameState.setExplorationsLeft(intValue);
                         }
                         case "hasMapFragment" -> {
-                            // Uses existing setHasMapFragment(boolean)
                             boolValue = Boolean.parseBoolean(value);
                             gameState.setHasMapFragment(boolValue); 
                         }
                         case "fullness" -> {
-                            // **Requires setFullnessLevel(int) in Inventory.java**
                             intValue = Integer.parseInt(value);
                             inv.setFullnessLevel(intValue);
                         }
@@ -169,7 +165,6 @@ public class FileHandler {
                             if (boolValue) gameState.reviveAkio(); 
                         }
                         case "weather" -> {
-                            // Uses setTodayWeather(Weather) which is now in GameState.java
                             gameState.setTodayWeather(Weather.valueOf(value)); 
                         }
                     }
@@ -191,5 +186,6 @@ public class FileHandler {
     }
 
 }
+
 
 
