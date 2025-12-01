@@ -42,7 +42,7 @@ public class FileHandler {
             }
             out.println("END_RAW");
 
-            // --- Crafted Items (Fixing the iteration error) ---
+            // --- Crafted Items ---
             out.println("craftedItems:");
             for (CraftedItem item : craftedItems) {
                 // Only save the item's name
@@ -191,4 +191,5 @@ public class FileHandler {
     }
 
 }
+
 
