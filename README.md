@@ -196,7 +196,7 @@ Your mission: restore civilization's greatest weapons; knowledge, technology, an
 Your choices will determine the future.
 --------------------------
 
-Press ENTER to begin Day 1...
+Press ENTER to begin...
 
 --- (Day 1) ---
 1. Explore [10 attempts left]
