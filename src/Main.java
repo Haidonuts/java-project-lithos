@@ -18,7 +18,7 @@ public class Main {
 
     // Intro story text
     private static final String INTRO_TEXT_PART_1 = "Over the horizon, a vast blue light swelled and crept across the land.";
-    private static final String INTRO_TEXT_PART_2 = "When it finally reached you !BOOM! everything changed. The moment it touched your skin, you turned to stone. Every conscious being did.";
+    private static final String INTRO_TEXT_PART_2 = "When it finally reached you !BOOM! everything changed. The moment it touched your skin, you turned to stone.";
     private static final String INTRO_TEXT_PART_3 = "Civilization shattered. Time washed over the world like a tidal wave.";
     private static final String INTRO_TEXT_PART_4 = "3,000 years later, you awaken.";
     private static final String INTRO_TEXT_PART_5 = "Alone.";
@@ -146,7 +146,7 @@ public class Main {
         TextUtil.type(INTRO_TEXT_PART_13);
         System.out.println("--------------------------");
         
-        System.out.print("\nPress ENTER to begin Day " + gameState.getCurrentDay() + "...");
+        System.out.print("\nPress ENTER to begin...");
         sc.nextLine();
         System.out.println("\n");
     }
@@ -217,4 +217,5 @@ public class Main {
         try { sc.close(); } catch (Exception ignored) {}
     }
 }
+
 
