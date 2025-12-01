@@ -6,7 +6,7 @@ public class FileHandler {
     
     private static final String SAVE_FILE = "projectlithos.txt";
 
-    // ===================== SAVE GAME =====================
+    // SAVE GAME
     public static void saveGame(GameState gameState) {
         // Use try-with-resources for PrintWriter and FileWriter
         try (PrintWriter out = new PrintWriter(new FileWriter(SAVE_FILE))) {
@@ -186,6 +186,7 @@ public class FileHandler {
     }
 
 }
+
 
 
 
