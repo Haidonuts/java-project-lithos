@@ -1,6 +1,6 @@
 public class GameState {  
 
-    // Flags for companion revival states — all can be TRUE at the same time
+    // Flags for companion revival states
     private boolean kinoRevived = false;
     private boolean bemRevived = false;
     private boolean akioRevived = false;
@@ -136,3 +136,4 @@ public class GameState {
         this.todayWeather = weather;
     }
 }
+
