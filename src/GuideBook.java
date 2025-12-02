@@ -23,7 +23,7 @@ public class GuideBook {
         System.out.println("  Recipe: Grapes (Must be done in Alchemy Table Menu)");
         System.out.println("7. Revival Potion");
         System.out.println("  Recipe: Nitric Acid + Alcohol (Must be done in Alchemy Table Menu)");
-        System.out.println("    BONUS: Add Platinum (consumed) for 3x Potion yield!"); 
+        System.out.println("    BONUS: Add Platinum (consumed) for 2x Potion yield!"); 
         System.out.println("---");
     }
 
@@ -49,4 +49,5 @@ public class GuideBook {
         System.out.println("- Map Fragment (Unlocks Cave)");
         System.out.println("- Raw Meat (from Spear), Cooked Meat (from Furnace), Glass, Alcohol");
     }
+
 }
